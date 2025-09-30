@@ -3,6 +3,14 @@ Este proyecto consiste en el desarrollo de una plataforma de voluntariado donde 
 
 El objetivo es crear un espacio colaborativo, similar a un tablón de anuncios, donde se publiquen ofertas y peticiones de voluntariado.
 
+# GitHub de los Integrantes
+-[Kevin Andres Flores Garces]()
+-[Mar Bou Bernad]()
+-[Thabata Denise Monteiro]()
+-[Pol Valle Montes](https://github.com/Doplax)
+-[Anna Hidalgo Costa]()
+
+
 # Tecnologías 
 - HTML
 - CSS
