@@ -1,7 +1,10 @@
-export function headerComponent(){
-    const header = document.querySelector('#header') 
-    
-    header.innerHTML = ` 
+export function headerComponent() {
+  const isGithubPages = window.location.hostname.includes("github.io");
+  const BASE_PATH = isGithubPages ? "/producto-1/" : "/";
+
+  const header = document.querySelector("#header");
+
+  header.innerHTML = ` 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold text-primary" href="#">Voluntariado</a>
@@ -13,16 +16,16 @@ export function headerComponent(){
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Dashboard</a>
+                            <a class="nav-link" href="${BASE_PATH}index.html">Dashboard</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/login.html">Login</a>
+                            <a class="nav-link" href="${BASE_PATH}pages/login.html">Login</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/voluntariados.html">voluntariados</a>
+                            <a class="nav-link" href="${BASE_PATH}pages/voluntariados.html">voluntariados</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/alta-usuario.html">Alta Usuario</a>
+                            <a class="nav-link" href="${BASE_PATH}pages/alta-usuario.html">Alta Usuario</a> 
                         </li>
                     </ul>
                     
@@ -33,5 +36,5 @@ export function headerComponent(){
             </div>
         </nav>
     `;
-    return header;
+  return header;
 }
