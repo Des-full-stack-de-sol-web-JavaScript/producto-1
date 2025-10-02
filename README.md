@@ -8,7 +8,7 @@ El objetivo es crear un espacio colaborativo, similar a un tablón de anuncios, 
 -[Mar Bou Bernad]()
 -[Thabata Denise Monteiro]()
 -[Pol Valle Montes](https://github.com/Doplax)
--[Anna Hidalgo Costa]()
+-[Anna Hidalgo Costa](http://github.com/annahico)
 
 
 # Tecnologías 
