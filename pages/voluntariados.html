@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Load Bootsrap Styles-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- Load Custom Styles -->
     <link rel="stylesheet" href="../styles/main.css">
@@ -13,6 +15,7 @@
 
     <title>Voluntarios</title>
 </head>
+
 <body id="voluntarios-page">
 
     <header id="header">
@@ -20,14 +23,72 @@
     </header>
 
     <main>
-        <h1>Voluntariados</h1>
+        <h1>Gestión de Voluntariados</h1>
         <section>
+            <div class="container">
+                <div class="row">
+                    <form class="col">
+                        <h2>Alta de Voluntariado</h2>
+                        <div class="form-group">
+                            <label for="vountariadosTitulo">Título</label>
+                            <input class="form-control" id="vountariadosTitulo">
+                        </div>
+                        <div class="form-group">
+                            <label for="vountariadosUsuario">Usuario</label>
+                            <input class="form-control" id="vountariadosUsuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="vountariadosFecha">Fecha</label>
+                            <input type="date" class="form-control" id="vountariadosFecha">
+                        </div>
+                        <div class="form-group">
+                            <label for="vountariadosDescripcion">Descripción</label>
+                            <textarea class="form-control" id="vountariadosDescripcion" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="voluntariadosSelect">Tipo</label>
+                            <select class="form-control" id="voluntariadosSelect">
+                                <option>Petición</option>
+                                <option>Oferta</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Dar de Alta</button>
 
+                    </form>
+                    <div class="col">
+                        <h2>Consulta y Borrado de Voluntariados</h2>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Título</th>
+                                    <th scope="col">Usuario</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">Tipo</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>T</td>
+                                    <td>U</td>
+                                    <td>F</td>
+                                    <td>D</td>
+                                    <td>T</td>
+                                    <td> <button type="submit" class="btn btn-danger">Borrar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    
-    <script type="module" src="../logic/main.js"></script> 
-    <script type="module" src="../logic/voluntariados.js"></script> 
+
+    <script type="module" src="../logic/main.js"></script>
+    <script type="module" src="../logic/voluntariados.js"></script>
 
 </body>
+
 </html>
