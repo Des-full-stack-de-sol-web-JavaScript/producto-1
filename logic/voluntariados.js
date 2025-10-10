@@ -9,7 +9,7 @@ function voluntariadosPage() {
     /*se copian los datos iniciales */
     const datosTabla = [...dashboardData];
 
-    /* Función para cargar los datos iniciales procedentes del archivo dashboardData.js*/
+    /* Carga los datos iniciales procedentes del archivo dashboardData.js y crea el botón  de borrado*/
     function cargarDatosTabla() {
         tabla.innerHTML = "";
 
