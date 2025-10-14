@@ -179,7 +179,65 @@
                             </div>
                             
                             <!-- Información Adicional -->
-
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <h3 class="h5 text-primary border-bottom pb-2">
+                                        <i class="bi bi-info-circle me-2"></i>Información Adicional
+                                    </h3>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <label for="departamento" class="form-label">Departamento</label>
+                                    <select class="form-select" id="departamento">
+                                        <option value="" selected>Seleccione...</option>
+                                        <option value="tecnologia">Tecnología</option>
+                                        <option value="recursos-humanos">Recursos Humanos</option>
+                                        <option value="finanzas">Finanzas</option>
+                                        <option value="marketing">Marketing</option>
+                                        <option value="ventas">Ventas</option>
+                                        <option value="operaciones">Operaciones</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-md-6 mb-3">
+                                    <label for="estado" class="form-label">Estado</label>
+                                    <select class="form-select" id="estado">
+                                        <option value="activo" selected>Activo</option>
+                                        <option value="inactivo">Inactivo</option>
+                                        <option value="pendiente">Pendiente</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-12 mb-3">
+                                    <label for="direccion" class="form-label">Dirección</label>
+                                    <textarea class="form-control" id="direccion" rows="2"></textarea>
+                                </div>
+                                
+                                <div class="col-12 mb-3">
+                                    <label for="observaciones" class="form-label">Observaciones</label>
+                                    <textarea class="form-control" id="observaciones" rows="3" placeholder="Información adicional sobre el usuario..."></textarea>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="enviar-correo">
+                                        <label class="form-check-label" for="enviar-correo">
+                                            Suscribete a nuestra Newsletter
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="acepta-terminos" required>
+                                        <label class="form-check-label" for="acepta-terminos">
+                                            Acepto los términos y condiciones <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Debe aceptar los términos y condiciones para continuar.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Botones de acción -->
 
                 </section>
     </main>
