@@ -19,11 +19,20 @@
     <header id="header">
         <!-- Content loaded dinamically using JS -->
     </header>
-
-    <main>
-        <h1>Login</h1>
-        <section>
-
+    <main class="container mt-5">
+        <h1 class="text-center mb-3">Iniciar Sesión</h1>
+        <section class="mx-auto" style="max-width: 400px;">
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="usuario@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña" required minlength="6">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+            </form>
         </section>
     </main>
     
