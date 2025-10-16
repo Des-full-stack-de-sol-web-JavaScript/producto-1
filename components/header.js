@@ -3,6 +3,9 @@ export function headerComponent() {
   const BASE_PATH = isGithubPages ? "/producto-1/" : "/";
 
   const header = document.querySelector("#header");
+  const currentUser = window.localStorage.getItem('email');
+  console.log("currentUser", currentUser)
+
 
   header.innerHTML = ` 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,7 +33,7 @@ export function headerComponent() {
                     </ul>
                     
                     <span class="navbar-text text-muted">
-                        -no login-
+                       ${currentUser ?? '-no login-'} 
                     </span>
                 </div>
             </div>
