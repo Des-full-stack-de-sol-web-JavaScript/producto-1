@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/login.css">
 
-
     <title>Login</title>
 </head>
 <body id="login-page">
@@ -20,27 +19,27 @@
         <!-- Content loaded dinamically using JS -->
     </header>
 
-    <main>
-        <h1 class="text-center mb-4">Iniciar Sesión</h1>
-        <section class="mx-auto" style="max-width: 400px;">
-            <form id="loginForm" novalidate>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" id="email" class="form-control" placeholder="usuario@ejemplo.com" required>
-                <div class="invalid-feedback"></div>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" id="password" class="form-control" placeholder="Contraseña" required minlength="6">
-                <div class="invalid-feedback"></div>
-            </div>
-        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
-      </form>
+    <main class="d-flex justify-content-center vh-100">
+        <div class="container mt-5">
+            <h1 class="text-center mb-4 mt-4">Iniciar Sesión</h1>
+            <section class="mx-auto" style="max-width: 400px;">
+                <form id="loginForm" novalidate>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="e0" id="email" class="form-control" placeholder="usuario@ejemplo.com" required>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" id="password" class="form-control" placeholder="Contraseña" required minlength="6">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                </form>
         </section>
+        </div>
     </main>
-    
     <script type="module" src="../logic/main.js"></script>
     <script type="module" src="../logic/login.js"></script>
-
 </body>
 </html>
