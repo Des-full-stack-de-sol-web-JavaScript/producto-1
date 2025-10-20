@@ -49,7 +49,23 @@ document.addEventListener("DOMContentLoaded", () => {
     actualizarBarraContrasena(e.target.value);
   });
 
+// --- Validación personalizada de contraseñas ---
+const validarCoincidenciaContrasenas = () => {
+    if (passwordInput.value !== confirmPasswordInput.value) {
+      confirmPasswordInput.setCustomValidity("Las contraseñas no coinciden");
+    } else {
+      confirmPasswordInput.setCustomValidity("");
+    }
+  };
+
+  confirmPasswordInput.addEventListener("input", validarCoincidenciaContrasenas);
+  passwordInput.addEventListener("input", validarCoincidenciaContrasenas);
 
 
+
+
+
+
+  
   });
 // altaUsuariosPage()
