@@ -61,7 +61,20 @@ const validarCoincidenciaContrasenas = () => {
   confirmPasswordInput.addEventListener("input", validarCoincidenciaContrasenas);
   passwordInput.addEventListener("input", validarCoincidenciaContrasenas);
 
+// --- Botón volver ---
+  btnVolver.addEventListener("click", () => {
+    window.history.back();
+  });
 
+  // --- Botón cancelar ---
+  btnCancelar.addEventListener("click", () => {
+    const confirmar = confirm("¿Desea cancelar el registro y limpiar el formulario?");
+    if (confirmar) {
+      form.reset();
+      passwordStrengthBar.style.width = "0%";
+      passwordStrengthText.textContent = "";
+    }
+  });
 
 
 
