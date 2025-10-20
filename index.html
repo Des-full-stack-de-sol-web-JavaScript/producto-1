@@ -20,11 +20,22 @@
     </header>
 
     <main>
-        <h1>Dashboard de voluntariado</h1>
+        <section class="container">
 
+            <div class="text-center mb-4">
+                <h1 class="mb-3">Dashboard de voluntariado de mascotas</h1>
+                <button type="submit" class="btn btn-primary altaBtn">Otras</button>
+                <button type="submit" class="btn btn-primary altaBtn">Propias</button>
+            </div>
+
+            <div class="row g-3 justify-content-center" id="dashboard">
+                <!-- Content loaded dinamically using JS -->
+            </div>
+            
+        </section>
     </main>
     
     <script type="module" src="./logic/main.js"></script> 
     <script type="module" src="./logic/dashboard.js"></script> 
 </body>
-</html>
+</html> 
