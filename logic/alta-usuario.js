@@ -76,9 +76,43 @@ const validarCoincidenciaContrasenas = () => {
     }
   });
 
+ // --- Validación y envío del formulario ---
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
 
+    if (!form.checkValidity()) {
+      form.classList.add("was-validated");
+      return;
+    }
 
+    // Obtener datos principales (sin contraseñas)
+    const nuevoUsuario = {
+      nombre: document.getElementById("nombre").value.trim(),
+      apellidos: document.getElementById("apellidos").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      usuario: document.getElementById("usuario").value.trim(),
+      rol: document.getElementById("rol").value,
+      departamento: document.getElementById("departamento").value,
+      estado: document.getElementById("estado").value,
+    };
 
-  
+    // Mostrar confirmación
+    alert(`✅ Usuario registrado correctamente:\n
+Nombre: ${nuevoUsuario.nombre} ${nuevoUsuario.apellidos}
+Usuario: ${nuevoUsuario.usuario}
+Email: ${nuevoUsuario.email}
+Rol: ${nuevoUsuario.rol}
+Departamento: ${nuevoUsuario.departamento || "N/A"}
+Estado: ${nuevoUsuario.estado}`);
+
+    // Limpiar el formulario
+    form.reset();
+    form.classList.remove("was-validated");
+    passwordStrengthBar.style.width = "0%";
+    passwordStrengthText.textContent = "";
   });
-// altaUsuariosPage()
+});
+
+
+altaUsuariosPage()
