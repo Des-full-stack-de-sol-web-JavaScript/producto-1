@@ -1,19 +1,27 @@
-export function dashboardCard({title, date, description, author, category, color}){
-    
-    const dashboardCard = document.createElement('div');
-    dashboardCard.className = 'col-12 col-md-6 col-lg-4';
-    dashboardCard.innerHTML = `
+export function dashboardCard({ title, date, description, author, category, color }) {
+  // 1. Crea el elemento 'columna'
+  const cardColumn = document.createElement('div');
+  
+  // 2. Asígnale las clases de columna de Bootstrap
+  cardColumn.className = 'col-lg-4 col-md-6 col-sm-12';
 
-        <div class="card h-100" style="background-color: ${color}; color: white;">
-            <div class="card-body">
-                <h5 class="card-title">${title}</h5>
-                <h6 class="card-subtitle mb-2"><strong>${date}</strong></h6>
-                <p class="card-text">${description}</p>
-                <p class="card-text"><strong>Publicado por: </strong> ${author}</p>
-                <p class="card-text"><strong>Categoría:</strong> ${category}</p>
-            </div>
+  // 3. Inserta el HTML de la tarjeta DENTRO de la columna
+  cardColumn.innerHTML = `
+    <div class="card" style="--accent-color: ${color || '#007bff'}">
+      <div class="accent"></div> 
+      <div class="body">
+        <h3 class="title">${title}</h3>
+        <p class="date">${new Date(date).toLocaleDateString()}</p>
+        <p class="description">${description}</p>
+
+        <div class="meta">
+          <p><span class="meta-label">Publicado por:</span> ${author}</p>
+          <p><span class="meta-label">Categoría:</span> <span class="badge">${category}</span></p>
         </div>
-
-    `;
-    return dashboardCard;
+      </div>
+    </div>
+  `;
+  
+  // 4. Devuelve la columna completa
+  return cardColumn;
 }
