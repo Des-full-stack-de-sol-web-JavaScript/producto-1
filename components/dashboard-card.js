@@ -1,4 +1,4 @@
-export function dashboardCard({ title, date, description, author, category, color }) {
+export function dashboardCard({ title, date, description, author, category, color, email }) {
   const cardColumn = document.createElement('div');
   
   cardColumn.className = 'col-lg-4 col-md-6 col-sm-12';
@@ -10,10 +10,10 @@ export function dashboardCard({ title, date, description, author, category, colo
         <h3 class="title">${title}</h3>
         <p class="date">${new Date(date).toLocaleDateString()}</p>
         <p class="description">${description}</p>
-
         <div class="meta">
           <p><span class="meta-label">Publicado por:</span> ${author}</p>
           <p><span class="meta-label">Categoría:</span> <span class="badge">${category}</span></p>
+          <p><span class="meta-label">Email:</span> ${email}</p>
         </div>
       </div>
     </div>
