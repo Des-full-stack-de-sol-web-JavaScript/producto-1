@@ -1,11 +1,8 @@
 export function dashboardCard({ title, date, description, author, category, color }) {
-  // 1. Crea el elemento 'columna'
   const cardColumn = document.createElement('div');
   
-  // 2. Asígnale las clases de columna de Bootstrap
   cardColumn.className = 'col-lg-4 col-md-6 col-sm-12';
 
-  // 3. Inserta el HTML de la tarjeta DENTRO de la columna
   cardColumn.innerHTML = `
     <div class="card" style="--accent-color: ${color || '#007bff'}">
       <div class="accent"></div> 
@@ -22,6 +19,5 @@ export function dashboardCard({ title, date, description, author, category, colo
     </div>
   `;
   
-  // 4. Devuelve la columna completa
   return cardColumn;
 }
