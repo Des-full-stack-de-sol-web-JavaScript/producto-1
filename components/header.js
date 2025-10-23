@@ -8,7 +8,7 @@ export function headerComponent() {
 
 
   header.innerHTML = ` 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold text-primary" href="${BASE_PATH}index.html">Voluntariado</a>
                 

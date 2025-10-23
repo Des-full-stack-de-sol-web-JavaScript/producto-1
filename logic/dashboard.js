@@ -1,10 +1,10 @@
 import { dashboardData } from '../assets/data/dashboardData.js';
 import { dashboardCard } from '../components/dashboard-card.js'
 
-const contenedor = document.getElementById('dashboard');
 
 function dashboardPage() {
     console.log("Dashboard Page Loaded");
+    const contenedor = document.getElementById('dashboard');
     
     contenedor.innerHTML = '';
     
