@@ -4,6 +4,7 @@ export const dashboardData = [
     date: "2025-02-15",
     description: "Nativo español busca compañero para practicar inglés a nivel conversación. Ofrezco ayuda con el español.",
     author: "Kevin",
+    email: "kevin.gomez@gmail.com",
     category: "Intercambio", 
     color: "pink" 
   },
@@ -12,6 +13,7 @@ export const dashboardData = [
     date: "2025-03-05",
     description: "Se buscan voluntarios para hacer compañía, leer o salir a pasear con personas mayores en la zona centro. No se requiere experiencia.",
     author: "Thabata", 
+    email: "thabata.diaz@gmail.com",
     category: "Voluntariado", 
     color: "blue" 
   },
@@ -20,6 +22,7 @@ export const dashboardData = [
     date: "2025-03-14",
     description: "Salida el 14/03 a las 8:00 AM. Se comparten gastos de gasolina y peajes. Maletero amplio.",
     author: "Ana",
+    email: "ana.ruiz@gmail.com",
     category: "Compartir", 
     color: "teal" 
   },
@@ -28,6 +31,7 @@ export const dashboardData = [
     date: "2025-02-10",
     description: "Busco persona responsable para cuidar de una gata de forma ocasional. Su dueña ya no puede hacerse cargo.",
     author: "Mar",
+    email: "mar.sanchez@gmail.com",
     category: "Otras", 
     color: "green"
   },
@@ -36,6 +40,7 @@ export const dashboardData = [
     date: "2025-04-05",
     description: "Te ayudo a configurar tu ordenador, instalar programas o solucionar problemas de software.",
     author: "Pol",
+    email: "pol.lopez@gmail.com",
     category: "Servicios",
     color: "purple"
   },
@@ -44,6 +49,7 @@ export const dashboardData = [
     date: "2025-06-22",
     description: "Profesora de yoga ofrece clases privadas a cambio de ayuda semanal con el mantenimiento de su huerto urbano.",
     author: "Lia",
+    email: "lia.martin@gmail.com",
     category: "Intercambio",
     color: "pink"
   },
@@ -52,6 +58,7 @@ export const dashboardData = [
     date: "2025-05-12",
     description: "Hombre de 30 años busca equipo o grupo para partidos de fútbol los domingos por la tarde.",
     author: "Rau",
+    email: "rau.perez@gmail.com",
     category: "Deportes",
     color: "orange" 
   },
@@ -60,6 +67,7 @@ export const dashboardData = [
     date: "2025-03-14",
     description: "Bicicleta en buen estado, freno hidráulico y cambio Shimano. Precio negociable.",
     author: "Jor",
+    email: "jor.fernandez@gmail.com",
     category: "Ventas",
     color: "red"
   }
