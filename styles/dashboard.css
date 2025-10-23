@@ -1,3 +1,75 @@
 #dashboard-page {
+  .card-container {
+    width: 100%;
+    padding: 16px;
+    /*display: flex;*/
+    justify-content: center;
+  }
 
+  .card {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 6px;
+      width: 100%;
+      background-color: var(--accent-color);
+    }
+
+    .body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #222;
+      }
+
+      .date {
+        font-size: 14px;
+        color: #666;
+      }
+
+      .description {
+        font-size: 16px;
+        color: #444;
+        line-height: 1.5;
+      }
+
+      .meta {
+        margin-top: 16px;
+        font-size: 15px;
+        color: #333;
+
+        .meta-label {
+          font-weight: 700; 
+          color: #000;
+          margin-right: 4px; 
+        }
+
+        .badge {
+          display: inline-block;
+          background-color: #f2f2f2;
+          border-radius: 8px;
+          padding: 2px 8px;
+          font-size: 13px;
+          color: #333;
+        }
+      }
+    }
+  }
 }
