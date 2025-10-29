@@ -18,14 +18,15 @@ function voluntariadosPage() {
 
             fila.innerHTML =
                 `<td>${voluntariado.title}</td>
-                    <td>${voluntariado.author}</td>
+                    <td>${voluntariado.email}</td>
                     <td>${voluntariado.date}</td>
                     <td>${voluntariado.description}</td>
-                    <td>${voluntariado.category}</td>
+                    <td>${voluntariado.type}</td>
                     <td> <button type="submit" class="btn btn-danger borrarBtn" data-index="${index}">Borrar</button></td>`;
 
             tabla.appendChild(fila);
         });
+
     }
 
     /** Elimina el contenido de la fila de la tabla al pulsar el botón borrar */

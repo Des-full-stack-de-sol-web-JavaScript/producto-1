@@ -1,38 +1,42 @@
 export const dashboardData = [
   {
-    title: "Intercambio de idiomas: Español - Inglés", 
+    title: "Intercambio de idiomas: Español - Inglés",
     date: "2025-02-15",
     description: "Nativo español busca compañero para practicar inglés a nivel conversación. Ofrezco ayuda con el español.",
     author: "Kevin",
     email: "kevin.gomez@gmail.com",
-    category: "Intercambio", 
-    color: "pink" 
+    category: "Intercambio",
+    type: "Oferta",
+    color: "pink"
   },
   {
-    title: "Voluntariado para acompañamiento a personas mayores", 
+    title: "Voluntariado para acompañamiento a personas mayores",
     date: "2025-03-05",
     description: "Se buscan voluntarios para hacer compañía, leer o salir a pasear con personas mayores en la zona centro. No se requiere experiencia.",
-    author: "Thabata", 
+    author: "Thabata",
     email: "thabata.diaz@gmail.com",
-    category: "Voluntariado", 
-    color: "blue" 
+    category: "Voluntariado",
+    type: "Peticion",
+    color: "blue"
   },
   {
-    title: "Compartir coche: Viaje Madrid - Barcelona (3 plazas)", 
+    title: "Compartir coche: Viaje Madrid - Barcelona (3 plazas)",
     date: "2025-03-14",
     description: "Salida el 14/03 a las 8:00 AM. Se comparten gastos de gasolina y peajes. Maletero amplio.",
     author: "Ana",
     email: "ana.ruiz@gmail.com",
-    category: "Compartir", 
-    color: "teal" 
+    category: "Compartir",
+    type: "Oferta",
+    color: "teal"
   },
   {
-    title: "Busco canguro responsable para cuidar de mi gata", 
+    title: "Busco canguro responsable para cuidar de mi gata",
     date: "2025-02-10",
     description: "Busco persona responsable para cuidar de una gata de forma ocasional. Su dueña ya no puede hacerse cargo.",
     author: "Mar",
     email: "mar.sanchez@gmail.com",
-    category: "Otras", 
+    category: "Otras",
+    type: "Peticion",
     color: "green"
   },
   {
@@ -42,15 +46,17 @@ export const dashboardData = [
     author: "Pol",
     email: "pol.lopez@gmail.com",
     category: "Servicios",
+    type: "Oferta",
     color: "purple"
   },
   {
-    title: "Intercambio: Clases de yoga por ayuda con huerto urbano", 
+    title: "Intercambio: Clases de yoga por ayuda con huerto urbano",
     date: "2025-06-22",
     description: "Profesora de yoga ofrece clases privadas a cambio de ayuda semanal con el mantenimiento de su huerto urbano.",
     author: "Lia",
     email: "lia.martin@gmail.com",
     category: "Intercambio",
+    type: "Oferta",
     color: "pink"
   },
   {
@@ -60,7 +66,8 @@ export const dashboardData = [
     author: "Rau",
     email: "rau.perez@gmail.com",
     category: "Deportes",
-    color: "orange" 
+    type: "Peticion",
+    color: "orange"
   },
   {
     title: "Se vende bicicleta de montaña",
@@ -69,6 +76,7 @@ export const dashboardData = [
     author: "Jor",
     email: "jor.fernandez@gmail.com",
     category: "Ventas",
+    type: "Oferta",
     color: "red"
   }
 ];
