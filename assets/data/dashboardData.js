@@ -16,7 +16,7 @@ export const dashboardData = [
     author: "Thabata",
     email: "thabata.diaz@gmail.com",
     category: "Voluntariado",
-    type: "Peticion",
+    type: "Petición",
     color: "blue"
   },
   {
@@ -24,7 +24,7 @@ export const dashboardData = [
     date: "2025-03-14",
     description: "Salida el 14/03 a las 8:00 AM. Se comparten gastos de gasolina y peajes. Maletero amplio.",
     author: "Ana",
-    email: "ana.ruiz@gmail.com",
+    email: "anna.ruiz@gmail.com",
     category: "Compartir",
     type: "Oferta",
     color: "teal"
@@ -36,7 +36,7 @@ export const dashboardData = [
     author: "Mar",
     email: "mar.sanchez@gmail.com",
     category: "Otras",
-    type: "Peticion",
+    type: "Petición",
     color: "green"
   },
   {
@@ -53,8 +53,8 @@ export const dashboardData = [
     title: "Intercambio: Clases de yoga por ayuda con huerto urbano",
     date: "2025-06-22",
     description: "Profesora de yoga ofrece clases privadas a cambio de ayuda semanal con el mantenimiento de su huerto urbano.",
-    author: "Lia",
-    email: "lia.martin@gmail.com",
+    author: "Anna",
+    email: "anna.ruiz@gmail.com",
     category: "Intercambio",
     type: "Oferta",
     color: "pink"
@@ -63,18 +63,18 @@ export const dashboardData = [
     title: "Se busca grupo para jugar fútbol los domingos",
     date: "2025-05-12",
     description: "Hombre de 30 años busca equipo o grupo para partidos de fútbol los domingos por la tarde.",
-    author: "Rau",
-    email: "rau.perez@gmail.com",
+    author: "Pol",
+    email: "pol.lopez@gmail.com",
     category: "Deportes",
-    type: "Peticion",
+    type: "Petición",
     color: "orange"
   },
   {
     title: "Se vende bicicleta de montaña",
     date: "2025-03-14",
     description: "Bicicleta en buen estado, freno hidráulico y cambio Shimano. Precio negociable.",
-    author: "Jor",
-    email: "jor.fernandez@gmail.com",
+    author: "Kevin",
+    email: "kevin.gomez@gmail.com",
     category: "Ventas",
     type: "Oferta",
     color: "red"
